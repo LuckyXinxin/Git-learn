@@ -18,4 +18,6 @@
 17.撤销修改内容，若没提交到暂存区，则撤销到版本库之前状态，若已提交到暂存区并又做了修改，则撤销到暂存区状态：git checkout -- file learn.txt
 18.删除文件：rm learn.txt（工作区的文件）
 19.确认删除（从库中删除）：git rm learn.txt，然后提交，撤回可以用git checkout -- file learn.txt
-20.
+20.要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+   关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+   此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
